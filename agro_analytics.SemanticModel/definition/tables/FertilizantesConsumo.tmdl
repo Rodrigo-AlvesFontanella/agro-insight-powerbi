@@ -1,0 +1,54 @@
+table FertilizantesConsumo
+	lineageTag: fd403316-e766-40d5-9315-72b141957e75
+
+	measure 'Consumo Total (Toneladas)' = SUM(FertilizantesConsumo[Toneladas])
+		formatString: #,##0.0
+		lineageTag: b528f932-251e-4534-a50b-d27256562d6d
+
+	measure 'Custo Total Fertilizantes' = SUM(FertilizantesConsumo[CustoBRL])
+		formatString: "R$" #,##0
+		lineageTag: e68f118b-5d64-4248-81b0-74d35a64fe74
+
+	measure 'Custo por Hectare' = DIVIDE([Custo Total Fertilizantes], [Total Hectares])
+		formatString: "R$" #,##0.00
+		lineageTag: f986522e-c633-465c-a9a3-8a4be1ce8019
+
+	measure 'Consumo por Hectare' = DIVIDE([Consumo Total (Toneladas)], [Total Hectares])
+		formatString: 0.000
+		lineageTag: 0ad63a1d-d2fc-407a-9e25-fb652a416b97
+
+	column Data
+		dataType: dateTime
+		lineageTag: 94fad7e1-42a2-4c60-9065-17ed0722bcec
+		sourceColumn: Data
+
+	column TalhaoID
+		dataType: int64
+		lineageTag: 495d9b23-ad36-4cb5-ab5d-44890cb629b7
+		sourceColumn: TalhaoID
+
+	column TipoFertilizante
+		dataType: string
+		lineageTag: 0e5dd81b-df75-49a9-9170-a48734225023
+		sourceColumn: TipoFertilizante
+
+	column Toneladas
+		dataType: double
+		lineageTag: 084318be-884e-4cb9-b85d-8f943b72c617
+		sourceColumn: Toneladas
+
+	column CustoBRL
+		dataType: double
+		lineageTag: 6e50741d-996f-48db-bbe0-b312c6464843
+		sourceColumn: CustoBRL
+
+	partition FertilizantesConsumo = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\fonta\Desktop\portfolio_powerbi\agro_analytics\fertilizantes_consumo.csv"),[Delimiter=",", Columns=5, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Data", type date}, {"TalhaoID", Int64.Type}, {"TipoFertilizante", type text}, {"Toneladas", type number}, {"CustoBRL", type number}})
+				in
+				    #"Changed Type"
+

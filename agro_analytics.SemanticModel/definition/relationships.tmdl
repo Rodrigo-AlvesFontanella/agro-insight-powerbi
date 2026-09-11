@@ -1,0 +1,12 @@
+relationship Talhoes_Agricultores
+	fromColumn: Talhoes.AgricultorID
+	toColumn: Agricultores.AgricultorID
+
+relationship Consumo_Talhoes
+	fromColumn: FertilizantesConsumo.TalhaoID
+	toColumn: Talhoes.TalhaoID
+
+relationship Consumo_Calendario
+	fromColumn: FertilizantesConsumo.Data
+	toColumn: Calendario.Date
+

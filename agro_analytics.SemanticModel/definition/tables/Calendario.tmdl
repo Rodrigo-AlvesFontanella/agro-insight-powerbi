@@ -1,0 +1,52 @@
+table Calendario
+	lineageTag: 985a2336-38c8-40a8-ae70-e0c1045a6bff
+	dataCategory: Time
+
+	column Date
+		isUnique
+		lineageTag: 21878a42-61b9-48f7-9d81-ec0b2a5e0058
+		isNameInferred
+		sourceColumn: [Date]
+
+	column Ano
+		lineageTag: 95ac5b2e-ac17-409e-ac4a-83f883d4786d
+		isNameInferred
+		sourceColumn: [Ano]
+
+	column MesNumero
+		lineageTag: 98f1fe9f-9183-4eeb-8319-739ff2167f69
+		isNameInferred
+		sourceColumn: [MesNumero]
+
+	column NomeMes
+		lineageTag: be53b003-3941-4a75-8595-24439162ce09
+		isNameInferred
+		sourceColumn: [NomeMes]
+		sortByColumn: MesNumero
+
+	column AnoMes
+		lineageTag: c31eff99-bd6e-4620-abc5-d0d6a857b283
+		isNameInferred
+		sourceColumn: [AnoMes]
+		sortByColumn: AnoMesSort
+
+	column AnoMesSort
+		lineageTag: d99a739c-8cf3-42aa-8f61-7fe311e7fd6e
+		isNameInferred
+		sourceColumn: [AnoMesSort]
+
+	partition Calendario = calculated
+		mode: import
+		source =
+				VAR MinData = MIN(FertilizantesConsumo[Data])
+				VAR MaxData = MAX(FertilizantesConsumo[Data])
+				RETURN
+				ADDCOLUMNS(
+				    CALENDAR(MinData, MaxData),
+				    "Ano", YEAR([Date]),
+				    "MesNumero", MONTH([Date]),
+				    "NomeMes", FORMAT([Date], "mmm"),
+				    "AnoMes", FORMAT([Date], "mmm/yyyy"),
+				    "AnoMesSort", YEAR([Date])*100 + MONTH([Date])
+				)
+

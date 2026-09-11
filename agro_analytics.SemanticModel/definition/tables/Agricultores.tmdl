@@ -1,0 +1,52 @@
+table Agricultores
+	lineageTag: c68995ee-22cb-4c97-8f3c-9c7b4d8079ea
+
+	measure 'Total Agricultores' = COUNTROWS(Agricultores)
+		formatString: #,##0
+		lineageTag: 96e722aa-c378-4d0b-94a1-b0fed1d2d61c
+
+	column AgricultorID
+		dataType: int64
+		lineageTag: 58066ec2-585a-4ba6-a086-14e2db4c41c2
+		sourceColumn: AgricultorID
+
+	column Nome
+		dataType: string
+		lineageTag: 7f64cbe3-df17-44f4-b977-0fa8374c0cfd
+		sourceColumn: Nome
+
+	column Estado
+		dataType: string
+		lineageTag: 3390735e-4c3a-4afa-bec1-33047e236319
+		sourceColumn: Estado
+
+	column Municipio
+		dataType: string
+		lineageTag: 7bf0913a-bd32-4770-bc71-5e210b840397
+		sourceColumn: Municipio
+
+	column Latitude
+		dataType: double
+		lineageTag: 7e47596b-80c0-4df8-a988-9d70c7e9b271
+		sourceColumn: Latitude
+
+	column Longitude
+		dataType: double
+		lineageTag: 48e43319-ed4d-4c32-a852-43449bfebe73
+		sourceColumn: Longitude
+
+	column ClienteDesde
+		dataType: dateTime
+		lineageTag: 669eb6a9-d77c-4136-8042-19bdbd045917
+		sourceColumn: ClienteDesde
+
+	partition Agricultores = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\fonta\Desktop\portfolio_powerbi\agro_analytics\agricultores.csv"),[Delimiter=",", Columns=7, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"AgricultorID", Int64.Type}, {"Nome", type text}, {"Estado", type text}, {"Municipio", type text}, {"Latitude", type number}, {"Longitude", type number}, {"ClienteDesde", type date}})
+				in
+				    #"Changed Type"
+

@@ -1,0 +1,6 @@
+# Power BI Desktop local artifacts — not meant for source control
+.pbi/
+*.pbix
+~$*
+*.abf
+cache.abf

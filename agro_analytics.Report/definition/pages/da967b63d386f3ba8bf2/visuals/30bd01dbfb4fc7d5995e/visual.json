@@ -1,0 +1,298 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "30bd01dbfb4fc7d5995e",
+  "position": {
+    "x": 39.878419452887542,
+    "y": 91.428571428571431,
+    "z": 0,
+    "height": 328.75379939209728,
+    "width": 1200.2431610942249,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "esriVisual",
+    "query": {
+      "queryState": {
+        "Color": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Talhoes"
+                    }
+                  },
+                  "Property": "Cultura"
+                }
+              },
+              "queryRef": "Talhoes.Cultura",
+              "nativeQueryRef": "Cultura"
+            }
+          ]
+        },
+        "Latitude": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Talhoes"
+                    }
+                  },
+                  "Property": "Latitude"
+                }
+              },
+              "queryRef": "Talhoes.Latitude",
+              "nativeQueryRef": "Latitude"
+            }
+          ]
+        },
+        "Location": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Talhoes"
+                    }
+                  },
+                  "Property": "NomeTalhao"
+                }
+              },
+              "queryRef": "Talhoes.NomeTalhao",
+              "nativeQueryRef": "NomeTalhao"
+            }
+          ]
+        },
+        "Longitude": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Talhoes"
+                    }
+                  },
+                  "Property": "Longitude"
+                }
+              },
+              "queryRef": "Talhoes.Longitude",
+              "nativeQueryRef": "Longitude"
+            }
+          ]
+        },
+        "Size": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Talhoes"
+                        }
+                      },
+                      "Property": "AreaHectares"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(Talhoes.AreaHectares)",
+              "nativeQueryRef": "Soma de AreaHectares"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "Talhoes"
+                      }
+                    },
+                    "Property": "AreaHectares"
+                  }
+                },
+                "Function": 0
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "objects": {
+      "mapTools": [
+        {
+          "properties": {
+            "basemaps": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "share": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "mapObject": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "'{\"portalUrl\":\"https://www.arcgis.com\",\"version\":\"2.4\",\"isAuthorNamedUser\":false,\"map\":{\"webmap\":{\"is3d\":false,\"itemData\":{\"operationalLayers\":[{\"id\":\"MyLayer\",\"visibility\":true,\"opacity\":1,\"minScale\":0,\"maxScale\":0,\"refreshInterval\":0,\"title\":\"Coordenadas\",\"objectIdField\":\"objectId\",\"type\":\"DataLayer\",\"layerType\":\"ArcGISFeatureLayer\",\"popupEnabled\":true,\"disablePopup\":false,\"visible\":true,\"geometryType\":\"point\",\"source\":[{\"attributes\":{},\"geometry\":{\"x\":0,\"y\":0,\"type\":\"point\",\"spatialReference\":{\"latestWkid\":3857,\"wkid\":102100}}}],\"spatialReference\":{\"latestWkid\":3857,\"wkid\":102100},\"esriMaps\":{\"isTimeEnabled\":\"false\",\"clusterInfo\":null,\"lastShareInfo\":null},\"timeInfo\":null,\"showLabels\":true,\"featureCollection\":{\"layers\":[{\"popupInfo\":{\"popupElements\":[{\"type\":\"fields\",\"fieldInfos\":[{\"fieldName\":\"Talhoes_Cultura\",\"isEditable\":true,\"label\":\"Cultura\",\"tooltip\":\"\",\"visible\":true},{\"fieldName\":\"expression/Talhoes_Latitude\",\"isEditable\":true,\"label\":\"Latitude\",\"visible\":true},{\"fieldName\":\"Talhoes_NomeTalhao\",\"isEditable\":true,\"label\":\"NomeTalhao\",\"tooltip\":\"\",\"visible\":true},{\"fieldName\":\"expression/Talhoes_Longitude\",\"isEditable\":true,\"label\":\"Longitude\",\"visible\":true},{\"fieldName\":\"expression/Sum_Talhoes_AreaHectares_\",\"isEditable\":true,\"label\":\"Soma de AreaHectares\",\"visible\":true},{\"fieldName\":\"ROW_ID\",\"format\":{\"digitSeparator\":true,\"places\":0},\"isEditable\":true,\"label\":\"ROW_ID\",\"tooltip\":\"\",\"visible\":true}]}],\"expressionInfos\":[{\"name\":\"Talhoes_Latitude\",\"title\":\"Latitude\",\"expression\":\"// PowerBI number format: #,0.00\\n\\nif (IsEmpty($feature[\\\"Talhoes_Latitude\\\"]))\\n{\\n  return $feature[\\\"Talhoes_Latitude\\\"] \\n}\\nText($feature[\\\"Talhoes_Latitude\\\"], \\\"#,###.00\\\")\"},{\"name\":\"Talhoes_Longitude\",\"title\":\"Longitude\",\"expression\":\"// PowerBI number format: #,0.00\\n\\nif (IsEmpty($feature[\\\"Talhoes_Longitude\\\"]))\\n{\\n  return $feature[\\\"Talhoes_Longitude\\\"] \\n}\\nText($feature[\\\"Talhoes_Longitude\\\"], \\\"#,###.00\\\")\"},{\"name\":\"Sum_Talhoes_AreaHectares_\",\"title\":\"Soma de AreaHectares\",\"expression\":\"// PowerBI number format: #,0.00\\n\\nif (IsEmpty($feature[\\\"Sum_Talhoes_AreaHectares_\\\"]))\\n{\\n  return $feature[\\\"Sum_Talhoes_AreaHectares_\\\"] \\n}\\nText($feature[\\\"Sum_Talhoes_AreaHectares_\\\"], \\\"#,###.00\\\")\"}],\"fieldInfos\":[{\"fieldName\":\"Talhoes_Cultura\",\"isEditable\":true,\"label\":\"Cultura\",\"tooltip\":\"\",\"visible\":true},{\"fieldName\":\"Talhoes_Latitude\",\"format\":{\"digitSeparator\":true,\"places\":2},\"isEditable\":true,\"label\":\"Latitude\",\"tooltip\":\"\",\"visible\":false},{\"fieldName\":\"expression/Talhoes_Latitude\",\"isEditable\":true,\"label\":\"Latitude\",\"visible\":true},{\"fieldName\":\"Talhoes_NomeTalhao\",\"isEditable\":true,\"label\":\"NomeTalhao\",\"tooltip\":\"\",\"visible\":true},{\"fieldName\":\"Talhoes_Longitude\",\"format\":{\"digitSeparator\":true,\"places\":2},\"isEditable\":true,\"label\":\"Longitude\",\"tooltip\":\"\",\"visible\":false},{\"fieldName\":\"expression/Talhoes_Longitude\",\"isEditable\":true,\"label\":\"Longitude\",\"visible\":true},{\"fieldName\":\"Sum_Talhoes_AreaHectares_\",\"format\":{\"digitSeparator\":true,\"places\":2},\"isEditable\":true,\"label\":\"Soma de AreaHectares\",\"tooltip\":\"\",\"visible\":false},{\"fieldName\":\"expression/Sum_Talhoes_AreaHectares_\",\"isEditable\":true,\"label\":\"Soma de AreaHectares\",\"visible\":true},{\"fieldName\":\"ROW_ID\",\"format\":{\"digitSeparator\":true,\"places\":0},\"isEditable\":true,\"label\":\"ROW_ID\",\"tooltip\":\"\",\"visible\":true}],\"title\":\"\",\"actions\":[]},\"layerDefinition\":{\"objectIdField\":\"objectId\",\"fields\":[{\"alias\":\"objectId\",\"editable\":false,\"name\":\"objectId\",\"nullable\":false,\"type\":\"esriFieldTypeOID\"},{\"alias\":\"Cultura\",\"editable\":true,\"length\":-1,\"name\":\"Talhoes_Cultura\",\"nullable\":true,\"type\":\"esriFieldTypeString\"},{\"alias\":\"Latitude\",\"editable\":true,\"name\":\"Talhoes_Latitude\",\"nullable\":true,\"type\":\"esriFieldTypeDouble\"},{\"alias\":\"NomeTalhao\",\"editable\":true,\"length\":-1,\"name\":\"Talhoes_NomeTalhao\",\"nullable\":true,\"type\":\"esriFieldTypeString\"},{\"alias\":\"Longitude\",\"editable\":true,\"name\":\"Talhoes_Longitude\",\"nullable\":true,\"type\":\"esriFieldTypeDouble\"},{\"alias\":\"Soma de AreaHectares\",\"editable\":true,\"name\":\"Sum_Talhoes_AreaHectares_\",\"nullable\":true,\"type\":\"esriFieldTypeDouble\"},{\"alias\":\"ROW_ID\",\"editable\":true,\"name\":\"ROW_ID\",\"nullable\":true,\"type\":\"esriFieldTypeInteger\"}],\"geometryType\":\"point\",\"drawingInfo\":{\"renderer\":{\"authoringInfo\":{\"visualVariables\":[{\"maxSliderValue\":1572.2,\"minSliderValue\":8.2,\"theme\":\"high-to-low\",\"type\":\"sizeInfo\"}]},\"type\":\"uniqueValue\",\"visualVariables\":[{\"type\":\"sizeInfo\",\"field\":\"Sum_Talhoes_AreaHectares_\",\"maxDataValue\":1572.2,\"maxSize\":30,\"minDataValue\":8.2,\"minSize\":3,\"valueUnit\":\"unknown\"}],\"field1\":\"Talhoes_Cultura\",\"legendOptions\":{\"title\":\"Cultura\"},\"defaultLabel\":\"Outro\",\"defaultSymbol\":{\"type\":\"esriSMS\",\"color\":[170,170,170,255],\"angle\":0,\"xoffset\":0,\"yoffset\":0,\"size\":6,\"style\":\"esriSMSCircle\",\"outline\":{\"type\":\"esriSLS\",\"color\":[153,153,153,64],\"width\":0.75,\"style\":\"esriSLSSolid\"}},\"uniqueValueGroups\":[{\"classes\":[{\"description\":\"\",\"label\":\"Soja\",\"symbol\":{\"type\":\"esriSMS\",\"color\":[237,81,81,178],\"angle\":0,\"xoffset\":0,\"yoffset\":0,\"size\":10,\"style\":\"esriSMSCircle\",\"outline\":{\"type\":\"esriSLS\",\"color\":[255,255,255,204],\"width\":1,\"style\":\"esriSLSSolid\"}},\"values\":[[\"Soja\"]]},{\"description\":\"\",\"label\":\"Milho\",\"symbol\":{\"type\":\"esriSMS\",\"color\":[20,158,206,178],\"angle\":0,\"xoffset\":0,\"yoffset\":0,\"size\":10,\"style\":\"esriSMSCircle\",\"outline\":{\"type\":\"esriSLS\",\"color\":[255,255,255,204],\"width\":1,\"style\":\"esriSLSSolid\"}},\"values\":[[\"Milho\"]]},{\"description\":\"\",\"label\":\"Cana-de-açúcar\",\"symbol\":{\"type\":\"esriSMS\",\"color\":[167,198,54,178],\"angle\":0,\"xoffset\":0,\"yoffset\":0,\"size\":10,\"style\":\"esriSMSCircle\",\"outline\":{\"type\":\"esriSLS\",\"color\":[255,255,255,204],\"width\":1,\"style\":\"esriSLSSolid\"}},\"values\":[[\"Cana-de-açúcar\"]]},{\"description\":\"\",\"label\":\"Algodão\",\"symbol\":{\"type\":\"esriSMS\",\"color\":[158,85,156,178],\"angle\":0,\"xoffset\":0,\"yoffset\":0,\"size\":10,\"style\":\"esriSMSCircle\",\"outline\":{\"type\":\"esriSLS\",\"color\":[255,255,255,204],\"width\":1,\"style\":\"esriSLSSolid\"}},\"values\":[[\"Algodão\"]]},{\"description\":\"\",\"label\":\"Trigo\",\"symbol\":{\"type\":\"esriSMS\",\"color\":[252,146,31,178],\"angle\":0,\"xoffset\":0,\"yoffset\":0,\"size\":10,\"style\":\"esriSMSCircle\",\"outline\":{\"type\":\"esriSLS\",\"color\":[255,255,255,204],\"width\":1,\"style\":\"esriSLSSolid\"}},\"values\":[[\"Trigo\"]]},{\"description\":\"\",\"label\":\"Café\",\"symbol\":{\"type\":\"esriSMS\",\"color\":[255,222,62,178],\"angle\":0,\"xoffset\":0,\"yoffset\":0,\"size\":10,\"style\":\"esriSMSCircle\",\"outline\":{\"type\":\"esriSLS\",\"color\":[255,255,255,204],\"width\":1,\"style\":\"esriSLSSolid\"}},\"values\":[[\"Café\"]]}]}],\"uniqueValueInfos\":[{\"description\":\"\",\"label\":\"Soja\",\"symbol\":{\"type\":\"esriSMS\",\"color\":[237,81,81,178],\"angle\":0,\"xoffset\":0,\"yoffset\":0,\"size\":10,\"style\":\"esriSMSCircle\",\"outline\":{\"type\":\"esriSLS\",\"color\":[255,255,255,204],\"width\":1,\"style\":\"esriSLSSolid\"}},\"value\":\"Soja\"},{\"description\":\"\",\"label\":\"Milho\",\"symbol\":{\"type\":\"esriSMS\",\"color\":[20,158,206,178],\"angle\":0,\"xoffset\":0,\"yoffset\":0,\"size\":10,\"style\":\"esriSMSCircle\",\"outline\":{\"type\":\"esriSLS\",\"color\":[255,255,255,204],\"width\":1,\"style\":\"esriSLSSolid\"}},\"value\":\"Milho\"},{\"description\":\"\",\"label\":\"Cana-de-açúcar\",\"symbol\":{\"type\":\"esriSMS\",\"color\":[167,198,54,178],\"angle\":0,\"xoffset\":0,\"yoffset\":0,\"size\":10,\"style\":\"esriSMSCircle\",\"outline\":{\"type\":\"esriSLS\",\"color\":[255,255,255,204],\"width\":1,\"style\":\"esriSLSSolid\"}},\"value\":\"Cana-de-açúcar\"},{\"description\":\"\",\"label\":\"Algodão\",\"symbol\":{\"type\":\"esriSMS\",\"color\":[158,85,156,178],\"angle\":0,\"xoffset\":0,\"yoffset\":0,\"size\":10,\"style\":\"esriSMSCircle\",\"outline\":{\"type\":\"esriSLS\",\"color\":[255,255,255,204],\"width\":1,\"style\":\"esriSLSSolid\"}},\"value\":\"Algodão\"},{\"description\":\"\",\"label\":\"Trigo\",\"symbol\":{\"type\":\"esriSMS\",\"color\":[252,146,31,178],\"angle\":0,\"xoffset\":0,\"yoffset\":0,\"size\":10,\"style\":\"esriSMSCircle\",\"outline\":{\"type\":\"esriSLS\",\"color\":[255,255,255,204],\"width\":1,\"style\":\"esriSLSSolid\"}},\"value\":\"Trigo\"},{\"description\":\"\",\"label\":\"Café\",\"symbol\":{\"type\":\"esriSMS\",\"color\":[255,222,62,178],\"angle\":0,\"xoffset\":0,\"yoffset\":0,\"size\":10,\"style\":\"esriSMSCircle\",\"outline\":{\"type\":\"esriSLS\",\"color\":[255,255,255,204],\"width\":1,\"style\":\"esriSLSSolid\"}},\"value\":\"Café\"}]},\"transparency\":0},\"featureReduction\":null,\"locationProvider\":{\"type\":\"coordinates\",\"lookupFields\":[{\"lookupField\":\"xFieldName\",\"outField\":\"Talhoes_Longitude\"},{\"lookupField\":\"yFieldName\",\"outField\":\"Talhoes_Latitude\"}],\"sourceSR\":4326,\"targetSR\":3857},\"minScale\":0,\"maxScale\":0,\"definitionExpression\":null,\"templates\":[{\"name\":\"New Feature\",\"description\":\"\",\"prototype\":{\"attributes\":{\"Talhoes_Cultura\":null,\"Talhoes_Latitude\":null,\"Talhoes_NomeTalhao\":null,\"Talhoes_Longitude\":null,\"Sum_Talhoes_AreaHectares_\":null,\"ROW_ID\":null}}}],\"elevationInfo\":null,\"name\":\"Coordenadas\",\"type\":\"DataLayer\",\"queryParameters\":{\"tableId\":\"\"}},\"featureSet\":{\"features\":[{\"attributes\":{},\"geometry\":{\"x\":0,\"y\":0,\"type\":\"point\",\"spatialReference\":{\"latestWkid\":3857,\"wkid\":102100}}}]}}]}}],\"tables\":[],\"baseMap\":{\"baseMapLayers\":[{\"id\":\"VectorTile_1970\",\"opacity\":1,\"title\":\"Light Gray Base\",\"visibility\":true,\"layerType\":\"VectorTileLayer\",\"styleUrl\":\"https://cdn.arcgis.com/sharing/rest/content/items/291da5eab3a0412593b66d384379f89f/resources/styles/root.json\"},{\"id\":\"VectorTile_7117\",\"opacity\":1,\"title\":\"Light Gray Reference\",\"visibility\":true,\"layerType\":\"VectorTileLayer\",\"styleUrl\":\"https://cdn.arcgis.com/sharing/rest/content/items/1768e8369a214dfab4e2167d5c5f2454/resources/styles/root.json\",\"isReference\":true}],\"title\":\"Light Gray Canvas\"},\"version\":\"2.26\",\"authoringApp\":\"ArcGIS for Power BI\",\"authoringAppVersion\":\"2026.2.992\",\"bookmarks\":[],\"initialState\":{\"viewpoint\":{\"targetGeometry\":{\"spatialReference\":{\"latestWkid\":3857,\"wkid\":102100},\"xmin\":-10370067.004514236,\"ymin\":-3904449.0984844225,\"xmax\":1038006.5929887164,\"ymax\":-998619.0311959344}}}}},\"webmapExtensions\":{\"format\":2}},\"embedCheckPassed\":false}'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "geometryCache": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "'{\"key\":\"cachedgeocode@@world\",\"compressionMethod\":\"pako\",\"data\":\"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\"}'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Talhões por cultura — Brasil'"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#F5F7F6'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "9e9484d051e1dbf08614",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Talhoes"
+              }
+            },
+            "Property": "Latitude"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "82220381bc9f070c5b78",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Talhoes"
+              }
+            },
+            "Property": "Longitude"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "a53f494d4d100b41d330",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Talhoes"
+              }
+            },
+            "Property": "Cultura"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "f3acc46ee0ec3d2ef2ab",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Talhoes"
+                  }
+                },
+                "Property": "AreaHectares"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "e31acb5bae5ef923504b",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Talhoes"
+              }
+            },
+            "Property": "NomeTalhao"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
+  }
+}

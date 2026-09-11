@@ -1,0 +1,77 @@
+﻿AgricultorID,Nome,Estado,Municipio,Latitude,Longitude,ClienteDesde
+1,João Martins,MT,Sinop,-9.6205,-57.86471,2023-02-01
+2,Diego Lima,MT,Lucas do Rio Verde,-10.13978,-52.65314,2020-02-01
+3,Vanessa Araújo,MT,Sorriso,-16.7446,-54.28534,2023-05-01
+4,Patrícia Carvalho,MT,Sinop,-13.86666,-57.5182,2016-10-01
+5,Marcos Ribeiro,MT,Sinop,-13.72667,-54.45632,2022-03-01
+6,Fábio Machado,MT,Sorriso,-14.67993,-59.11103,2017-11-01
+7,Fábio Martins,MT,Sorriso,-13.96269,-51.64552,2023-05-01
+8,Thiago Almeida,GO,Rio Verde,-16.27335,-49.57822,2016-06-01
+9,Pedro Machado,GO,Jataí,-14.16986,-51.99633,2021-04-01
+10,Carlos Souza,GO,Jataí,-12.92462,-46.6979,2020-02-01
+11,Maria Pereira,GO,Rio Verde,-15.03651,-48.63761,2016-04-01
+12,Fernanda Oliveira,GO,Montividiu,-17.59054,-51.89259,2016-01-01
+13,Camila Lima,GO,Montividiu,-13.47522,-48.36926,2015-10-01
+14,Fernanda Souza,GO,Rio Verde,-15.14112,-50.17714,2023-06-01
+15,Gustavo Pereira,GO,Rio Verde,-15.8871,-49.68707,2017-06-01
+16,Camila Teixeira,GO,Rio Verde,-16.70754,-49.99399,2016-03-01
+17,Rafael Souza,PR,Cascavel,-24.98342,-53.19315,2015-01-01
+18,Vinícius Costa,PR,Cascavel,-25.70454,-51.73681,2017-07-01
+19,Vinícius Carvalho,PR,Toledo,-25.15544,-52.23491,2020-09-01
+20,Priscila Lima,PR,Toledo,-23.6605,-52.94551,2016-07-01
+21,Leonardo Rodrigues,PR,Toledo,-22.78519,-49.43947,2020-05-01
+22,Eduardo Silva,PR,Cascavel,-25.85734,-49.84117,2019-01-01
+23,Fábio Pereira,PR,Guarapuava,-25.93822,-49.42146,2015-12-01
+24,Simone Ribeiro,PR,Ponta Grossa,-25.08819,-49.03529,2019-09-01
+25,Larissa Barbosa,PR,Guarapuava,-24.67257,-48.3024,2019-04-01
+26,Luiza Oliveira,PR,Ponta Grossa,-24.55563,-52.03435,2020-02-01
+27,Beatriz Oliveira,RS,Santa Rosa,-29.7452,-54.46026,2018-12-01
+28,Gustavo Costa,RS,Santa Rosa,-31.23871,-57.1104,2020-08-01
+29,Rafael Araújo,RS,Passo Fundo,-31.50991,-51.53525,2020-06-01
+30,Diego Silva,RS,Santa Rosa,-30.11418,-56.77629,2019-07-01
+31,Aline Gomes,RS,Cruz Alta,-32.25898,-56.60461,2023-01-01
+32,Eduardo Ribeiro,RS,Santa Rosa,-28.94171,-56.83891,2021-05-01
+33,Fernanda Oliveira,RS,Passo Fundo,-31.74998,-56.82713,2018-01-01
+34,Ana Silva,RS,Não-Me-Toque,-30.6972,-56.51939,2021-07-01
+35,Fábio Ribeiro,SP,Ribeirão Preto,-24.12309,-51.37865,2016-07-01
+36,Thiago Machado,SP,Franca,-22.26009,-50.64821,2019-06-01
+37,Larissa Gomes,SP,Araraquara,-20.42915,-51.60762,2017-08-01
+38,Vinícius Martins,SP,Ribeirão Preto,-22.62482,-46.32845,2018-12-01
+39,Diego Rodrigues,SP,Araraquara,-23.28782,-47.75216,2023-09-01
+40,Ana Nogueira,SP,São Carlos,-21.16193,-50.70884,2019-12-01
+41,Bruno Machado,SP,Ribeirão Preto,-24.22724,-49.39251,2022-08-01
+42,Pedro Costa,MG,Patos de Minas,-15.43034,-42.68046,2023-07-01
+43,Bruno Ferreira,MG,Patos de Minas,-19.68717,-41.69622,2017-09-01
+44,Maria Rodrigues,MG,Patos de Minas,-20.03147,-47.59227,2022-02-01
+45,Leonardo Barbosa,MG,Varginha,-15.72022,-47.43772,2021-05-01
+46,André Souza,MG,Araguari,-18.28171,-47.0363,2019-03-01
+47,Maria Araújo,MG,Patrocínio,-17.12743,-43.49136,2021-09-01
+48,Patrícia Machado,MG,Varginha,-20.42393,-42.19843,2023-03-01
+49,Carlos Rodrigues,BA,Luís Eduardo Magalhães,-13.24532,-38.96322,2017-08-01
+50,Eduardo Teixeira,BA,Barreiras,-16.54906,-40.31928,2019-10-01
+51,Maria Ribeiro,BA,São Desidério,-13.35138,-45.49013,2021-07-01
+52,Pedro Oliveira,BA,Barreiras,-16.19003,-40.17319,2021-11-01
+53,Bruno Machado,BA,São Desidério,-9.33027,-38.56105,2019-04-01
+54,Juliana Almeida,BA,Luís Eduardo Magalhães,-10.61064,-42.99783,2021-10-01
+55,André Barbosa,BA,São Desidério,-17.85067,-43.66057,2022-05-01
+56,André Barbosa,BA,São Desidério,-11.71612,-46.01914,2021-05-01
+57,Vanessa Machado,BA,Barreiras,-16.13682,-39.88697,2020-04-01
+58,Pedro Oliveira,BA,Barreiras,-12.00582,-41.40713,2018-03-01
+59,Débora Nogueira,MS,Dourados,-18.34182,-53.98582,2019-09-01
+60,Leonardo Carvalho,MS,Maracaju,-21.84902,-54.4703,2023-06-01
+61,Pedro Gomes,MS,Dourados,-20.02607,-57.4811,2023-07-01
+62,Aline Carvalho,MS,Chapadão do Sul,-23.21018,-55.56241,2015-07-01
+63,Priscila Ribeiro,MS,Maracaju,-23.73293,-56.45796,2018-02-01
+64,Pedro Silva,MS,Dourados,-22.53991,-52.99897,2020-01-01
+65,Carlos Machado,MS,Dourados,-22.4681,-54.7334,2016-08-01
+66,Carlos Oliveira,MS,Dourados,-21.44978,-51.9138,2019-10-01
+67,Débora Ferreira,MS,Dourados,-20.50933,-52.93951,2020-08-01
+68,Leonardo Oliveira,MS,Maracaju,-20.39126,-56.19091,2020-03-01
+69,Pedro Machado,TO,Pedro Afonso,-12.06983,-47.66544,2023-06-01
+70,Larissa Nogueira,TO,Pedro Afonso,-10.30656,-48.86554,2019-01-01
+71,Luiza Costa,TO,Gurupi,-10.66435,-46.57138,2015-02-01
+72,Gustavo Lima,TO,Formoso do Araguaia,-10.29236,-47.91532,2018-09-01
+73,Fábio Barbosa,TO,Pedro Afonso,-7.43184,-50.13934,2015-01-01
+74,Eduardo Pereira,TO,Pedro Afonso,-9.48065,-47.97955,2017-07-01
+75,Camila Pereira,TO,Formoso do Araguaia,-5.95434,-47.5666,2022-12-01
+76,Thiago Almeida,TO,Pedro Afonso,-9.57758,-46.7447,2023-04-01

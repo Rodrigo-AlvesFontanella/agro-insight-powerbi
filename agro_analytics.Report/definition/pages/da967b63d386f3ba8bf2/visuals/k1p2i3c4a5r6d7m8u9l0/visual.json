@@ -1,0 +1,161 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "k1p2i3c4a5r6d7m8u9l0",
+  "position": {
+    "x": 40,
+    "y": 436,
+    "z": 1,
+    "height": 70,
+    "width": 1200,
+    "tabOrder": 1
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Talhoes"
+                    }
+                  },
+                  "Property": "Total Hectares"
+                }
+              },
+              "queryRef": "Talhoes.Total Hectares",
+              "nativeQueryRef": "Total Hectares",
+              "displayName": "Hectares"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Agricultores"
+                    }
+                  },
+                  "Property": "Total Agricultores"
+                }
+              },
+              "queryRef": "Agricultores.Total Agricultores",
+              "nativeQueryRef": "Total Agricultores",
+              "displayName": "Agricultores"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Talhoes"
+                    }
+                  },
+                  "Property": "Total Talhoes"
+                }
+              },
+              "queryRef": "Talhoes.Total Talhoes",
+              "nativeQueryRef": "Total Talhoes",
+              "displayName": "Talhões"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Talhoes"
+                    }
+                  },
+                  "Property": "Cultura Predominante"
+                }
+              },
+              "queryRef": "Talhoes.Cultura Predominante",
+              "nativeQueryRef": "Cultura Predominante",
+              "displayName": "Cultura predominante"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "outline": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
+      ]
+    }
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "05e73e250361fc78204a",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Talhoes"
+              }
+            },
+            "Property": "Total Hectares"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "7ecba7378884f370906d",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Agricultores"
+              }
+            },
+            "Property": "Total Agricultores"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "58a698283e5622b0b772",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Talhoes"
+              }
+            },
+            "Property": "Total Talhoes"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "e15ba566bccb260dccf7",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Talhoes"
+              }
+            },
+            "Property": "Cultura Predominante"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
+}

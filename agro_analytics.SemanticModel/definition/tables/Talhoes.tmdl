@@ -1,0 +1,71 @@
+table Talhoes
+	lineageTag: 922174b3-35ea-4305-aafd-eee8e45433eb
+
+	measure 'Total Hectares' = SUM(Talhoes[AreaHectares])
+		formatString: #,##0
+		lineageTag: 8cf3760d-1bdb-43a9-9f6a-d67a51145171
+
+	measure 'Total Talhoes' = COUNTROWS(Talhoes)
+		formatString: #,##0
+		lineageTag: cb85b2fa-4d61-4ed4-8fc9-266d6a15bc43
+
+	measure 'Area Media por Talhao' = AVERAGE(Talhoes[AreaHectares])
+		formatString: #,##0.0
+		lineageTag: 650c814b-3b7c-4806-af78-156f5e479341
+
+	measure 'Cultura Predominante' =
+			VAR t = ADDCOLUMNS(VALUES(Talhoes[Cultura]), "@Area", CALCULATE([Total Hectares]))
+			VAR top1 = TOPN(1, t, [@Area], DESC)
+			RETURN MAXX(top1, Talhoes[Cultura])
+		lineageTag: 7d6f6e14-460c-4ac9-88c9-644d8a5a6f3d
+
+	column TalhaoID
+		dataType: int64
+		lineageTag: 66e3c116-11f8-4a84-8994-9f815c114ab1
+		sourceColumn: TalhaoID
+
+	column AgricultorID
+		dataType: int64
+		lineageTag: aea09eb4-4041-4015-822d-0e8c6aa7b446
+		sourceColumn: AgricultorID
+
+	column NomeTalhao
+		dataType: string
+		lineageTag: 4badb9eb-90dd-4ba1-ba3c-39cb7f310532
+		sourceColumn: NomeTalhao
+
+	column Cultura
+		dataType: string
+		lineageTag: aca1f149-b99a-4d16-883c-a76ddcd25d4d
+		sourceColumn: Cultura
+
+	column AreaHectares
+		dataType: double
+		lineageTag: b3c2f781-c37b-4266-9387-f2f7244c8d25
+		sourceColumn: AreaHectares
+
+	column Latitude
+		dataType: double
+		lineageTag: 9cffd51a-a2fe-45bd-8cd0-e71d0bc8973c
+		sourceColumn: Latitude
+
+	column Longitude
+		dataType: double
+		lineageTag: 2ead9893-3456-4265-b2cd-c5ec5173c822
+		sourceColumn: Longitude
+
+	column Safra
+		dataType: string
+		lineageTag: 422ff8a0-a865-4701-8ca2-93b14e907c62
+		sourceColumn: Safra
+
+	partition Talhoes = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\fonta\Desktop\portfolio_powerbi\agro_analytics\talhoes.csv"),[Delimiter=",", Columns=8, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"TalhaoID", Int64.Type}, {"AgricultorID", Int64.Type}, {"NomeTalhao", type text}, {"Cultura", type text}, {"AreaHectares", type number}, {"Latitude", type number}, {"Longitude", type number}, {"Safra", type text}})
+				in
+				    #"Changed Type"
+

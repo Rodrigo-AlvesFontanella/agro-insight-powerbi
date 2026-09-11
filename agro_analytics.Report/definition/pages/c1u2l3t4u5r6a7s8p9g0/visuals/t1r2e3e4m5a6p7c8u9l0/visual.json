@@ -1,0 +1,182 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "t1r2e3e4m5a6p7c8u9l0",
+  "position": {
+    "x": 40,
+    "y": 100,
+    "z": 0,
+    "height": 560,
+    "width": 680,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "treemap",
+    "query": {
+      "queryState": {
+        "Details": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Talhoes"
+                    }
+                  },
+                  "Property": "Cultura"
+                }
+              },
+              "queryRef": "Talhoes.Cultura",
+              "nativeQueryRef": "Cultura"
+            }
+          ]
+        },
+        "Group": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Agricultores"
+                    }
+                  },
+                  "Property": "Estado"
+                }
+              },
+              "queryRef": "Agricultores.Estado",
+              "nativeQueryRef": "Estado",
+              "active": true
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Talhoes"
+                    }
+                  },
+                  "Property": "Total Hectares"
+                }
+              },
+              "queryRef": "Talhoes.Total Hectares",
+              "nativeQueryRef": "Total Hectares",
+              "displayName": "Hectares"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "labels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "legend": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Área por estado e cultura'"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#F5F7F6'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "c34f9acd944c6ef56b87",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Agricultores"
+              }
+            },
+            "Property": "Estado"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "b64d08cc043a97c80db8",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Talhoes"
+              }
+            },
+            "Property": "Cultura"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "f9df78f17b7cac80c117",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Talhoes"
+              }
+            },
+            "Property": "Total Hectares"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
+}

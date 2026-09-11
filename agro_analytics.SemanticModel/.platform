@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "agro_analytics"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "323e122f-7f88-4be7-9ba9-6eff41ac349f"
+  }
+}

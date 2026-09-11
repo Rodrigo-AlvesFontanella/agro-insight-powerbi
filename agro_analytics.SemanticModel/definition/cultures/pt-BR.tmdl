@@ -1,0 +1,261 @@
+cultureInfo pt-BR
+
+	linguisticMetadata =
+			{
+			  "Version": "2.0.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "talhoes.total_hectares": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Talhoes",
+			          "ConceptualProperty": "Total Hectares"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Hectares": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "talhoes.total_talhoes": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Talhoes",
+			          "ConceptualProperty": "Total Talhoes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Talhões": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "talhoes.cultura_predominante": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Talhoes",
+			          "ConceptualProperty": "Cultura Predominante"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Cultura predominante": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "talhoes.nometalhao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Talhoes",
+			          "ConceptualProperty": "NomeTalhao"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "talhoes.cultura": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Talhoes",
+			          "ConceptualProperty": "Cultura"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Cultura": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "agricultores.total_agricultores": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Agricultores",
+			          "ConceptualProperty": "Total Agricultores"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Agricultores": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "agricultores.nome": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Agricultores",
+			          "ConceptualProperty": "Nome"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Agricultor": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "agricultores.estado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Agricultores",
+			          "ConceptualProperty": "Estado"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Estado": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "fertilizantesconsumo.consumo_total_toneladas": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FertilizantesConsumo",
+			          "ConceptualProperty": "Consumo Total (Toneladas)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Toneladas": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Consumo total": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "fertilizantesconsumo.custo_total_fertilizantes": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FertilizantesConsumo",
+			          "ConceptualProperty": "Custo Total Fertilizantes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Custo total": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "fertilizantesconsumo.custo_por_hectare": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FertilizantesConsumo",
+			          "ConceptualProperty": "Custo por Hectare"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Custo por hectare": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "fertilizantesconsumo.consumo_por_hectare": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FertilizantesConsumo",
+			          "ConceptualProperty": "Consumo por Hectare"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Consumo por hectare": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    }
+			  }
+			}
+		contentType: json
+

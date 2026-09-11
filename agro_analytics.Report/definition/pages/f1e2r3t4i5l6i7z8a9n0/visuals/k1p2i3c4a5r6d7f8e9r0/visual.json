@@ -1,0 +1,101 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "k1p2i3c4a5r6d7f8e9r0",
+  "position": {
+    "x": 40,
+    "y": 436,
+    "z": 1,
+    "height": 70,
+    "width": 1200,
+    "tabOrder": 1
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FertilizantesConsumo"
+                    }
+                  },
+                  "Property": "Consumo Total (Toneladas)"
+                }
+              },
+              "queryRef": "FertilizantesConsumo.Consumo Total (Toneladas)",
+              "nativeQueryRef": "Consumo Total (Toneladas)",
+              "displayName": "Consumo total"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FertilizantesConsumo"
+                    }
+                  },
+                  "Property": "Custo Total Fertilizantes"
+                }
+              },
+              "queryRef": "FertilizantesConsumo.Custo Total Fertilizantes",
+              "nativeQueryRef": "Custo Total Fertilizantes",
+              "displayName": "Custo total"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FertilizantesConsumo"
+                    }
+                  },
+                  "Property": "Custo por Hectare"
+                }
+              },
+              "queryRef": "FertilizantesConsumo.Custo por Hectare",
+              "nativeQueryRef": "Custo por Hectare",
+              "displayName": "Custo por hectare"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FertilizantesConsumo"
+                    }
+                  },
+                  "Property": "Consumo por Hectare"
+                }
+              },
+              "queryRef": "FertilizantesConsumo.Consumo por Hectare",
+              "nativeQueryRef": "Consumo por Hectare",
+              "displayName": "Consumo por hectare"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "outline": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
+      ]
+    }
+  }
+}
