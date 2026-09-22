@@ -1,9 +1,11 @@
 # Agro Insight — Map & Forecast
 
-Precision-agriculture dashboard mapping farms and fields by crop type using
-ArcGIS Maps for Power BI (lat/long points, sized by hectares), plus a
-statistical Forecast (Power BI's native Analytics pane) projecting future
-fertilizer consumption from historical trend and seasonality.
+Precision-agriculture dashboard for a **fictional agribusiness company**,
+mapping its farms and fields by crop type using ArcGIS Maps for Power BI
+(lat/long points, sized by hectares), plus a statistical Forecast (Power BI's
+native Analytics pane) projecting future fertilizer consumption from
+historical trend and seasonality. All company, farmer and field data is
+synthetic.
 
 **Live case study:** https://claude.ai/code/artifact/d8c46e72-b3f1-4045-975e-3662bba4a87d#agro
 
