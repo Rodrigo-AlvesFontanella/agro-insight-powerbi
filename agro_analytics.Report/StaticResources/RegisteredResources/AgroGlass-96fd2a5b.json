@@ -1,33 +1,33 @@
 {
-  "name": "AgroGlass-6c2f19ab.json",
+  "name": "AgroGlass-96fd2a5b.json",
   "dataColors": [
-    "#F2C14E",
-    "#1B8A94",
-    "#F28C38",
-    "#E85D4C",
-    "#3FB6B0",
-    "#6FCFC9",
-    "#0E5C63",
-    "#C9A0DC"
+    "#C79A3D",
+    "#8FA84E",
+    "#5C7A3A",
+    "#D9C9A3",
+    "#B98B4E",
+    "#5C3D2E",
+    "#6B4A34",
+    "#A9B98C"
   ],
-  "background": "#0B2E22",
-  "foreground": "#F5F7F6",
-  "tableAccent": "#3FB6B0",
+  "background": "#D6EACD",
+  "foreground": "#3A2A1C",
+  "tableAccent": "#6B4A34",
   "textClasses": {
     "callout": {
       "fontSize": 28,
       "fontFace": "Segoe UI Semibold",
-      "color": "#F5F7F6"
+      "color": "#3A2A1C"
     },
     "title": {
       "fontSize": 13,
       "fontFace": "Segoe UI Semibold",
-      "color": "#F5F7F6"
+      "color": "#3A2A1C"
     },
     "label": {
       "fontSize": 10,
       "fontFace": "Segoe UI",
-      "color": "#CFE8E2"
+      "color": "#8A7A68"
     }
   },
   "visualStyles": {
@@ -38,10 +38,10 @@
             "show": true,
             "color": {
               "solid": {
-                "color": "#FFFFFF"
+                "color": "#FCFAF4"
               }
             },
-            "transparency": 95
+            "transparency": 3
           }
         ],
         "border": [
@@ -49,10 +49,10 @@
             "show": true,
             "color": {
               "solid": {
-                "color": "#FFFFFF"
+                "color": "#D8CDB8"
               }
             },
-            "radius": 22
+            "radius": 14
           }
         ]
       }
@@ -62,14 +62,19 @@
         "value": [
           {
             "fontSize": 26,
-            "bold": true
+            "bold": true,
+            "fontColor": {
+              "solid": {
+                "color": "#3A2A1C"
+              }
+            }
           }
         ],
         "label": [
           {
             "fontColor": {
               "solid": {
-                "color": "#9fd4cf"
+                "color": "#8A7A68"
               }
             },
             "fontSize": 10
@@ -83,12 +88,12 @@
           {
             "backColor": {
               "solid": {
-                "color": "#0a2e22"
+                "color": "#FCFAF4"
               }
             },
             "fontColor": {
               "solid": {
-                "color": "#9fd4cf"
+                "color": "#6B4A34"
               }
             }
           }
@@ -97,22 +102,22 @@
           {
             "backColorPrimary": {
               "solid": {
-                "color": "#0E3B2C"
+                "color": "#FCFAF4"
               }
             },
             "backColorSecondary": {
               "solid": {
-                "color": "#0a2e22"
+                "color": "#F5F1E6"
               }
             },
             "fontColorPrimary": {
               "solid": {
-                "color": "#F5F7F6"
+                "color": "#3A2A1C"
               }
             },
             "fontColorSecondary": {
               "solid": {
-                "color": "#F5F7F6"
+                "color": "#3A2A1C"
               }
             }
           }
@@ -142,7 +147,7 @@
             "show": true,
             "labelColor": {
               "solid": {
-                "color": "#CFE8E2"
+                "color": "#8A7A68"
               }
             },
             "fontSize": 10
@@ -152,7 +157,7 @@
           {
             "color": {
               "solid": {
-                "color": "#F5F7F6"
+                "color": "#3A2A1C"
               }
             },
             "fontSize": 10
@@ -177,7 +182,7 @@
             "show": true,
             "labelColor": {
               "solid": {
-                "color": "#CFE8E2"
+                "color": "#8A7A68"
               }
             },
             "fontSize": 10
@@ -201,12 +206,12 @@
           {
             "gridlineColor": {
               "solid": {
-                "color": "#1a4536"
+                "color": "#D8CDB8"
               }
             },
             "labelColor": {
               "solid": {
-                "color": "#9fd4cf"
+                "color": "#8A7A68"
               }
             }
           }
@@ -215,7 +220,7 @@
           {
             "labelColor": {
               "solid": {
-                "color": "#9fd4cf"
+                "color": "#8A7A68"
               }
             }
           }
@@ -224,7 +229,7 @@
           {
             "labelColor": {
               "solid": {
-                "color": "#CFE8E2"
+                "color": "#8A7A68"
               }
             }
           }
@@ -247,12 +252,12 @@
           {
             "gridlineColor": {
               "solid": {
-                "color": "#1a4536"
+                "color": "#D8CDB8"
               }
             },
             "labelColor": {
               "solid": {
-                "color": "#9fd4cf"
+                "color": "#8A7A68"
               }
             }
           }
@@ -261,7 +266,7 @@
           {
             "labelColor": {
               "solid": {
-                "color": "#9fd4cf"
+                "color": "#8A7A68"
               }
             }
           }
@@ -284,12 +289,12 @@
           {
             "gridlineColor": {
               "solid": {
-                "color": "#1a4536"
+                "color": "#D8CDB8"
               }
             },
             "labelColor": {
               "solid": {
-                "color": "#9fd4cf"
+                "color": "#8A7A68"
               }
             }
           }
@@ -298,7 +303,7 @@
           {
             "labelColor": {
               "solid": {
-                "color": "#9fd4cf"
+                "color": "#8A7A68"
               }
             }
           }
@@ -321,12 +326,12 @@
           {
             "gridlineColor": {
               "solid": {
-                "color": "#1a4536"
+                "color": "#D8CDB8"
               }
             },
             "labelColor": {
               "solid": {
-                "color": "#9fd4cf"
+                "color": "#8A7A68"
               }
             }
           }
@@ -335,7 +340,7 @@
           {
             "labelColor": {
               "solid": {
-                "color": "#9fd4cf"
+                "color": "#8A7A68"
               }
             }
           }
@@ -354,7 +359,7 @@
             "show": true,
             "color": {
               "solid": {
-                "color": "#3FB6B0"
+                "color": "#6B4A34"
               }
             },
             "radius": 18
@@ -369,17 +374,17 @@
             "show": true,
             "color": {
               "solid": {
-                "color": "#0E3B2C"
+                "color": "#FCFAF4"
               }
             },
-            "transparency": 8
+            "transparency": 3
           }
         ],
         "items": [
           {
             "fontColor": {
               "solid": {
-                "color": "#F5F7F6"
+                "color": "#3A2A1C"
               }
             }
           }

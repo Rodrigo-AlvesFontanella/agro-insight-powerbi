@@ -13,7 +13,7 @@
     "visualType": "treemap",
     "query": {
       "queryState": {
-        "Details": {
+        "Group": {
           "projections": [
             {
               "field": {
@@ -27,11 +27,12 @@
                 }
               },
               "queryRef": "Talhoes.Cultura",
-              "nativeQueryRef": "Cultura"
+              "nativeQueryRef": "Cultura",
+              "active": true
             }
           ]
         },
-        "Group": {
+        "Details": {
           "projections": [
             {
               "field": {
@@ -45,8 +46,7 @@
                 }
               },
               "queryRef": "Agricultores.Estado",
-              "nativeQueryRef": "Estado",
-              "active": true
+              "nativeQueryRef": "Estado"
             }
           ]
         },
@@ -97,6 +97,269 @@
             }
           }
         }
+      ],
+      "dataPoint": [
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#6B4A34'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#C79A3D'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Talhoes"
+                          }
+                        },
+                        "Property": "Cultura"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'Soja'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#8FA84E'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Talhoes"
+                          }
+                        },
+                        "Property": "Cultura"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'Milho'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#5C7A3A'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Talhoes"
+                          }
+                        },
+                        "Property": "Cultura"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'Cana-de-açúcar'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#D9C9A3'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Talhoes"
+                          }
+                        },
+                        "Property": "Cultura"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'Algodão'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#B98B4E'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Talhoes"
+                          }
+                        },
+                        "Property": "Cultura"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'Trigo'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#5C3D2E'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Talhoes"
+                          }
+                        },
+                        "Property": "Cultura"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'Café'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
       ]
     },
     "visualContainerObjects": {
@@ -113,7 +376,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Área por estado e cultura'"
+                  "Value": "'Área por cultura e estado'"
                 }
               }
             },
@@ -122,7 +385,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#F5F7F6'"
+                      "Value": "'#3A2A1C'"
                     }
                   }
                 }
